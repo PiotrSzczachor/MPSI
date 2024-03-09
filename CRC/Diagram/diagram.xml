@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<UMLProfile profiletype="uml2">
+	<Documentation id="C792EA49-A" name="PW-CRC-Mazewski" version="1.0" notes="Diagram"/>
+	<Content>
+		<Stereotypes>
+			<Stereotype name="Sesja CRC" notes="" cx="0" cy="0">
+				<AppliesTo>
+					<Apply type="Diagram_Sequence"/>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="Struktura dziedziny" notes="" cx="0" cy="0">
+				<AppliesTo>
+					<Apply type="Diagram_Logical"/>
+				</AppliesTo>
+			</Stereotype>
+		</Stereotypes>
+		<TaggedValueTypes/>
+		<ViewDefinitions/>
+		<Metamodel/>
+	</Content>
+</UMLProfile>

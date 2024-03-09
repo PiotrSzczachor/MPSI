@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<UMLProfile profiletype="uml2">
+	<Documentation id="6059C509-1" name="PW-CRC-Mazewski" version="1.0" notes="Toolbox"/>
+	<Content>
+		<Stereotypes>
+			<Stereotype name="Struktura" notes="" cx="0" cy="0">
+				<AppliesTo>
+					<Apply type="ToolboxPage"/>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="PW-CRC-Mazewski::CRC(UML::Class)" type="" description="" unit="" values="" default="Karta CRC"/>
+					<Tag name="PW-CRC-Mazewski::Odpowiedzialno&#347;&#263;(UML::Operation)" type="" description="" unit="" values="" default="Odpowiedzialno&#347;&#263; karty"/>
+					<Tag name="PW-CRC-Mazewski::Wspó&#322;pracownicy(UML::Collaboration)" type="" description="" unit="" values="" default="Wspó&#322;pracownicy karty"/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="Zachowanie" notes="" cx="0" cy="0">
+				<AppliesTo>
+					<Apply type="ToolboxPage"/>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="PW-CRC-Mazewski::Komunikat(UML::Operation)" type="" description="" unit="" values="" default="Komunikat"/>
+				</TaggedValues>
+			</Stereotype>
+		</Stereotypes>
+		<TaggedValueTypes/>
+		<ViewDefinitions/>
+		<Metamodel/>
+	</Content>
+</UMLProfile>
