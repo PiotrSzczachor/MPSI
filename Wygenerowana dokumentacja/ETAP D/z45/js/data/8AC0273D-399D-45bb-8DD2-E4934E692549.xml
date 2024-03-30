@@ -1,0 +1,6 @@
+tocTab[tocTab.length] = new Array("0.1.1.2.3:1", "", "Zarządzanie kierowcami", "EARoot/EA1/EA1/EA2/EA3/EA53.htm", "175.png", "487", "0", "", "Logical diagram0","{FC8F5BA7-E61D-4283-A48F-82D72FCACCE0}");
+tocTab[tocTab.length] = new Array("0.1.1.2.3:2", "", "«boundary» FormularzKierownika_DodajNowegoKierowcę", "EARoot/EA1/EA1/EA2/EA3/EA56.htm", "5.png", "E3229", "0", "", "Class0","{A6C944CB-9DAF-4f50-B792-27E77F30EA60}");
+tocTab[tocTab.length] = new Array("0.1.1.2.3:3", "", "«boundary» FormularzKierownika_EdytujDaneKierowcy", "EARoot/EA1/EA1/EA2/EA3/EA57.htm", "5.png", "E3230", "0", "", "Class0","{3FE247B6-12B0-421f-BE47-705C88EA9EDB}");
+tocTab[tocTab.length] = new Array("0.1.1.2.3:4", "", "«boundary» FormularzKierownika_UsuńIstniejącegoKierowcę", "EARoot/EA1/EA1/EA2/EA3/EA58.htm", "5.png", "E3231", "0", "", "Class0","{A848C586-D4CB-42b2-A666-4D37F9274E4E}");
+tocTab[tocTab.length] = new Array("0.1.1.2.3:5", "", "«boundary» FormularzKierownika_ZaktualizujDaneIstniejącegoKierowcy", "EARoot/EA1/EA1/EA2/EA3/EA59.htm", "5.png", "E3232", "0", "", "Class0","{B7AFE4AB-D008-44dc-888F-3FBEB369B91E}");
+tocTab[tocTab.length] = new Array("0.1.1.2.3:6", "", "«boundary» FormularzKierownika_ZmodyfikujPrzypisaniePojazdówDoKierowcy", "EARoot/EA1/EA1/EA2/EA3/EA60.htm", "5.png", "E3233", "0", "", "Class0","{CD859FD1-A6BE-41ac-B4B1-D648DE6F42B9}");

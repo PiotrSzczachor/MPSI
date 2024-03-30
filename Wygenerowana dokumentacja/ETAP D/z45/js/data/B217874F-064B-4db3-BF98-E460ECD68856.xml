@@ -1,0 +1,5 @@
+tocTab[tocTab.length] = new Array("0.1.1.2.1", "1", "Przyjęcie zlecenia do realizacji", "EARoot/EA1/EA1/EA2/EA1/EA39.htm", "4.png", "", "", "{CB58C606-DA72-4274-80C7-8C61B17497DC}", "Package");
+tocTab[tocTab.length] = new Array("0.1.1.2.2", "1", "Realizacja zlecenia", "EARoot/EA1/EA1/EA2/EA2/EA46.htm", "4.png", "", "", "{E69BFC0D-7654-4ead-8847-B6B85066F4B8}", "Package");
+tocTab[tocTab.length] = new Array("0.1.1.2.3", "1", "Zarządzanie kierowcami", "EARoot/EA1/EA1/EA2/EA3/EA55.htm", "4.png", "", "", "{8AC0273D-399D-45bb-8DD2-E4934E692549}", "Package");
+tocTab[tocTab.length] = new Array("0.1.1.2.4", "1", "Zarządzanie pojazdami", "EARoot/EA1/EA1/EA2/EA4/EA63.htm", "4.png", "", "", "{A67D4FB6-2642-4c63-A5C1-19B9CE818A9C}", "Package");
+tocTab[tocTab.length] = new Array("0.1.1.2.5", "1", "Generowanie raportów", "EARoot/EA1/EA1/EA2/EA5/EA71.htm", "4.png", "", "", "{812A88E9-52ED-4762-BEEF-9ED575E493E3}", "Package");
