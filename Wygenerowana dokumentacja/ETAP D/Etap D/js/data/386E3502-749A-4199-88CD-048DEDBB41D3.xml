@@ -1,0 +1,6 @@
+tocTab[tocTab.length] = new Array("0.1.1.3.3:1", "", "Zarządzanie kierowcami", "EARoot/EA1/EA1/EA3/EA3/EA96.htm", "175.png", "490", "0", "", "Logical diagram0","{ACEB8D42-1F1D-46f7-87DE-A7DE302439D1}");
+tocTab[tocTab.length] = new Array("0.1.1.3.3:2", "", "«control» Ster_DodajNowegoKierowcę", "EARoot/EA1/EA1/EA3/EA3/EA99.htm", "5.png", "E3246", "0", "", "Class0","{BCE461DA-4C24-4496-AABB-C981060ED0E0}");
+tocTab[tocTab.length] = new Array("0.1.1.3.3:3", "", "«control» Ster_EdytujDaneKierowcy", "EARoot/EA1/EA1/EA3/EA3/EA100.htm", "5.png", "E3247", "0", "", "Class0","{14F19FC4-31FA-420c-9D68-325C3A52CA2D}");
+tocTab[tocTab.length] = new Array("0.1.1.3.3:4", "", "«control» Ster_UsuńIstniejącegoKierowcę", "EARoot/EA1/EA1/EA3/EA3/EA101.htm", "5.png", "E3248", "0", "", "Class0","{F4C01F4C-8747-4024-887C-7E287F62280F}");
+tocTab[tocTab.length] = new Array("0.1.1.3.3:5", "", "«control» Ster_ZaktualizujDaneIstniejącegoKierowcy", "EARoot/EA1/EA1/EA3/EA3/EA102.htm", "5.png", "E3249", "0", "", "Class0","{EA54DBE6-2DDE-4d37-AC8B-3791275C3228}");
+tocTab[tocTab.length] = new Array("0.1.1.3.3:6", "", "«control» Ster_ZmodyfikujPrzypisaniePojazdówDoKierowcy", "EARoot/EA1/EA1/EA3/EA3/EA103.htm", "5.png", "E3250", "0", "", "Class0","{29D0C4F2-7E60-4d10-840A-081227C07FBF}");

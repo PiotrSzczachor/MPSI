@@ -1,0 +1,6 @@
+tocTab[tocTab.length] = new Array("0.1.2:1", "", "Kooperacje", "EARoot/EA1/EA2/EA167.htm", "189.png", "444", "0", "", "Analysis diagram0","{95FB24D8-1B1A-4700-BC1D-E821AFC2408E}");
+tocTab[tocTab.length] = new Array("0.1.2.1", "1", "Przyjęcie zlecenia do realizacji", "EARoot/EA1/EA2/EA1/EA193.htm", "4.png", "", "", "{736DC42D-2768-4d22-89D5-A242EBA3E12A}", "Package");
+tocTab[tocTab.length] = new Array("0.1.2.2", "1", "Realizacja zlecenia", "EARoot/EA1/EA2/EA2/EA240.htm", "4.png", "", "", "{1C9FA718-780C-4ec5-A82C-1A2B99754C10}", "Package");
+tocTab[tocTab.length] = new Array("0.1.2.3", "1", "Zarządzanie kierowcami", "EARoot/EA1/EA2/EA3/EA283.htm", "4.png", "", "", "{C71CE76B-235A-4abd-8D0F-6D3F7A0C8528}", "Package");
+tocTab[tocTab.length] = new Array("0.1.2.4", "1", "Zarządzanie pojazdami", "EARoot/EA1/EA2/EA4/EA328.htm", "4.png", "", "", "{03DCFCD7-99D5-461e-BE6C-6893B5F316E8}", "Package");
+tocTab[tocTab.length] = new Array("0.1.2.5", "1", "Generowanie raportów", "EARoot/EA1/EA2/EA5/EA355.htm", "4.png", "", "", "{2ADA4D32-CDDD-4417-BD56-8A33F035B742}", "Package");

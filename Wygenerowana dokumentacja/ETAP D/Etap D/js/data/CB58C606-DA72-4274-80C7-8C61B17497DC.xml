@@ -1,0 +1,5 @@
+tocTab[tocTab.length] = new Array("0.1.1.2.1:1", "", "Przyjęcie zlecenia do realizacji", "EARoot/EA1/EA1/EA2/EA1/EA37.htm", "175.png", "486", "0", "", "Logical diagram0","{9629373A-1EEF-4428-9261-6FEF236D42E9}");
+tocTab[tocTab.length] = new Array("0.1.1.2.1:2", "", "«boundary» FormularzDyspozytora_PrzypiszKierowcęDoZlecenia", "EARoot/EA1/EA1/EA2/EA1/EA40.htm", "5.png", "E3164", "0", "", "Class0","{E4389AFA-8735-4b13-B6DF-E0BC6134C439}");
+tocTab[tocTab.length] = new Array("0.1.1.2.1:3", "", "«boundary» FormularzDyspozytora_WybierzZlecenieZListyDostępnychZleceń", "EARoot/EA1/EA1/EA2/EA1/EA41.htm", "5.png", "E3162", "0", "", "Class0","{718F620C-0EA5-414f-B3AF-F34120D5A57B}");
+tocTab[tocTab.length] = new Array("0.1.1.2.1:4", "", "«boundary» FormularzDyspozytora_ZaplanujTrasę", "EARoot/EA1/EA1/EA2/EA1/EA42.htm", "5.png", "E3163", "0", "", "Class0","{836B4663-60AC-4fa0-8134-C13A9D434913}");
+tocTab[tocTab.length] = new Array("0.1.1.2.1:5", "", "«boundary» FormularzSpedytora_DodajZlecenieDoSystemu", "EARoot/EA1/EA1/EA2/EA1/EA43.htm", "5.png", "E3150", "0", "", "Class0","{1ED5D564-5B0A-4788-840C-E833C5CDCF3E}");

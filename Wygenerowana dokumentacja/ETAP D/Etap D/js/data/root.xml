@@ -1,0 +1,3 @@
+tocTab[tocTab.length] = new Array("0", "1", "Etap D", "", "1.png", "", "", "{08542E21-9914-4876-B0E5-396822478CEC}", "Package");
+tocTab[tocTab.length] = new Array("0", "2", "System", "", "1.png", "System");
+tocTab[tocTab.length] = new Array("0", "3", "Project Glossary", "glossary.htm", "26.png");

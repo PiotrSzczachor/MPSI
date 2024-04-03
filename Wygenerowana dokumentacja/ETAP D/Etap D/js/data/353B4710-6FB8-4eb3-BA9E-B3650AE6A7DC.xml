@@ -1,0 +1,3 @@
+tocTab[tocTab.length] = new Array("0.1.1", "1", "Klasy analityczne", "EARoot/EA1/EA1/EA5.htm", "4.png", "", "", "{D4559DAC-EC45-4ffc-B473-7A1CC75B878A}", "Package");
+tocTab[tocTab.length] = new Array("0.1.2", "1", "Kooperacje", "EARoot/EA1/EA2/EA169.htm", "4.png", "", "", "{A7126B97-0E17-4558-835C-1F35A27CB956}", "Package");
+tocTab[tocTab.length] = new Array("0.1.3", "1", "Model dziedziny", "EARoot/EA1/EA3/EA359.htm", "4.png", "", "", "{D4BAFF0B-7A9F-409e-BA50-109857ED3482}", "Package");

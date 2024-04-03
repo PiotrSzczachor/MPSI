@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Project Glossary</title>
+<link href="./css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="pageHeader"></div>
+	<table border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="16%" class="TableHeading">Item</td>
+			<td width="8%" class="TableHeading">Type</td>
+			<td width="76%" class="TableHeading">Meaning</td>
+		</tr>
+						<tr valign="top">
+				<td width="16%" class="TableRow">Dyplomant</td>
+				<td width="8%" class="TableRow">Slowo (BNF)</td>
+				<td width="76%" class="TableRow">**Student piszacy prace dyplomowa w celu jej obrony
+Dyplomant = Student + Praca dyplomowa</td>
+			</tr>			<tr valign="top">
+				<td width="16%" class="TableRow">Egzamin</td>
+				<td width="8%" class="TableRow">Slowo (BNF)</td>
+				<td width="76%" class="TableRow">** Egzamin jest ostatecznym sprawdzianem wiedzy merytorycznej studenta oraz weryfikacja zlozonej pracy dyplomowej.
+Egzamin = Praca dyplomowa + Komisja + Ocena koncowa</td>
+			</tr>			<tr valign="top">
+				<td width="16%" class="TableRow">Kierunek</td>
+				<td width="8%" class="TableRow">Slowo (BNF)</td>
+				<td width="76%" class="TableRow">**Nazwa kierunku studiów, z listy kierunków realizowanych na pewnym wydziale</td>
+			</tr>			<tr valign="top">
+				<td width="16%" class="TableRow">Komisja</td>
+				<td width="8%" class="TableRow">Slowo (BNF)</td>
+				<td width="76%" class="TableRow">** Komisje tworzy 3 pracowników uczelni. Celem komisji jest ocena merytorycznej wiedzy studenta w czasie obrony pracy dyplomowej.
+Komisja = {Pracownik Uczelni} 3 </td>
+			</tr>			<tr valign="top">
+				<td width="16%" class="TableRow">Lista tematów</td>
+				<td width="8%" class="TableRow">Slowo (BNF)</td>
+				<td width="76%" class="TableRow">** Zakres merytoryczny wyrazony wyrazony w postaci tematów, na ktrórych specjalizuje sie pewien pracownik naukowy</td>
+			</tr>			<tr valign="top">
+				<td width="16%" class="TableRow">Ocena</td>
+				<td width="8%" class="TableRow">Slowo (BNF)</td>
+				<td width="76%" class="TableRow">***Ocena jest to wartosc przedstawiona w postaci liczby wymiernej sluzaca do oceny jakosci pracy wykonanej przez studenta.
+Ocena = [2.0|3.0|3.5|4.0|4.5|5.0] </td>
+			</tr>			<tr valign="top">
+				<td width="16%" class="TableRow">Ocena koncowa</td>
+				<td width="8%" class="TableRow">Slowo (BNF)</td>
+				<td width="76%" class="TableRow">**Srednia ocen studenta z calego toku nauczania na danych studiach.
+Ocena ze studiów = ocena</td>
+			</tr>			<tr valign="top">
+				<td width="16%" class="TableRow">Ocena promotora</td>
+				<td width="8%" class="TableRow">Slowo (BNF)</td>
+				<td width="76%" class="TableRow">**Ocena pracy dyplomowej wystawiona przez promotora
+Ocena promotora = ocena</td>
+			</tr>			<tr valign="top">
+				<td width="16%" class="TableRow">Ocena recenzenta</td>
+				<td width="8%" class="TableRow">Slowo (BNF)</td>
+				<td width="76%" class="TableRow">**Ocena pracy dyplomowej podczas wystawiona przez recenzenta
+Ocena recenzenta = ocena</td>
+			</tr>			<tr valign="top">
+				<td width="16%" class="TableRow">Ocena zbiorcza</td>
+				<td width="8%" class="TableRow">Slowo (BNF)</td>
+				<td width="76%" class="TableRow">**Zbiorcza ocena pracy dyplomowej, srednia arytmetyczna ocen wystawionych przez promotora i recenzentów
+Ocena zbiorcza = ocena</td>
+			</tr>			<tr valign="top">
+				<td width="16%" class="TableRow">Praca dyplomowa</td>
+				<td width="8%" class="TableRow">Slowo (BNF)</td>
+				<td width="76%" class="TableRow">** Praca dyplomowa jest dokumentem, na podstawie, którego wystawiana jest ocena koncowa studenta za dany etap studiów.
+Praca dyplomowa=  Temat + Sllowa kluczowe</td>
+			</tr>			<tr valign="top">
+				<td width="16%" class="TableRow">Pracownik administracji</td>
+				<td width="8%" class="TableRow">Slowo (BNF)</td>
+				<td width="76%" class="TableRow">** Osoba zatrudniona na uczelni, lecz nie prowadzaca ani dzialalnosci naukowej ani dydaktycznej. W zakresie odpowiedzialnosci pracowników administracji lezy zoorganizowanie procesu dydaktycznego od strony formalno-organizacyjnej.</td>
+			</tr>			<tr valign="top">
+				<td width="16%" class="TableRow">Pracownik naukowy uczelni</td>
+				<td width="8%" class="TableRow">Slowo (BNF)</td>
+				<td width="76%" class="TableRow">** Osoba pracujaca na uczelni oraz prowadzaca dzialalnosc naukowa i/lub dydaktyczna.
+Pracownik uczelni = Student + Lista tematów </td>
+			</tr>			<tr valign="top">
+				<td width="16%" class="TableRow">Promotor</td>
+				<td width="8%" class="TableRow">Slowo (BNF)</td>
+				<td width="76%" class="TableRow">** Pracownik naukowy uczelni kierujacy praca dyplomanta
+Promotor = pracownik uczelni </td>
+			</tr>			<tr valign="top">
+				<td width="16%" class="TableRow">Recenzent</td>
+				<td width="8%" class="TableRow">Slowo (BNF)</td>
+				<td width="76%" class="TableRow">** Pracownik naukowy uczelni odpowiedzialny za napisanie recenzji oraz ocene pracy
+Recenzent = pracownik uczelni</td>
+			</tr>			<tr valign="top">
+				<td width="16%" class="TableRow">Recenzja</td>
+				<td width="8%" class="TableRow">Slowo (BNF)</td>
+				<td width="76%" class="TableRow">** Recenzja jest ocena i sprawozdaniem sporzadzonym na temat pracy przez recenzenta.
+Recenzja = Recenzent + Ocena recenzenta + (komentarz)</td>
+			</tr>			<tr valign="top">
+				<td width="16%" class="TableRow">Slowa kluczowe</td>
+				<td width="8%" class="TableRow">Slowo (BNF)</td>
+				<td width="76%" class="TableRow">** Zbiór slów kluczowych przypisanych do danej pracy dyplomowej
+Slowa Kluczowe = {Slowo kluczowe}</td>
+			</tr>			<tr valign="top">
+				<td width="16%" class="TableRow">Specjalizacja</td>
+				<td width="8%" class="TableRow">Slowo (BNF)</td>
+				<td width="76%" class="TableRow">**Nazwa wybranej przez studenta specjalizacji z listy specjalizacji dostepnych na danym kierunku</td>
+			</tr>			<tr valign="top">
+				<td width="16%" class="TableRow">Status</td>
+				<td width="8%" class="TableRow">Slowo (BNF)</td>
+				<td width="76%" class="TableRow">**Status danego studenta jako uczestnika kursu edukacyjnego
+Status = [studiuje | absolwent | skreslony z listy studentów]</td>
+			</tr>			<tr valign="top">
+				<td width="16%" class="TableRow">Stopien</td>
+				<td width="8%" class="TableRow">Slowo (BNF)</td>
+				<td width="76%" class="TableRow">**Stopien studiów prezentuje poziom zawansowania programu edukacyjnego
+Stopien = [I | II | III ]</td>
+			</tr>			<tr valign="top">
+				<td width="16%" class="TableRow">Student</td>
+				<td width="8%" class="TableRow">Slowo (BNF)</td>
+				<td width="76%" class="TableRow">**Student jest osoba studiujaca na PW jednoznacznie identyfikowana przez numer indeksu
+Student = @ numer indexu + imie + nazwisko + Studia</td>
+			</tr>			<tr valign="top">
+				<td width="16%" class="TableRow">Studia</td>
+				<td width="8%" class="TableRow">Slowo (BNF)</td>
+				<td width="76%" class="TableRow">** Studia sa obiektem agregujacym informacje o kursie edukacyjnym, w którym uczestniczy student
+Studia = Stopien + Wydzial + Kierunek + Specjalizacja + Status + Tryb</td>
+			</tr>			<tr valign="top">
+				<td width="16%" class="TableRow">Tekst</td>
+				<td width="8%" class="TableRow">Slowo (BNF)</td>
+				<td width="76%" class="TableRow">**Standardowy tekst wykorzystywany przez system we wszystkich dokumentach zwiazanych z systemem</td>
+			</tr>			<tr valign="top">
+				<td width="16%" class="TableRow">Tryb</td>
+				<td width="8%" class="TableRow">Slowo (BNF)</td>
+				<td width="76%" class="TableRow">**Tryb studiów studenta
+Tryb = [zaoczne | staconarne | wieczorowe | zdalne]</td>
+			</tr>			<tr valign="top">
+				<td width="16%" class="TableRow">Wydzial</td>
+				<td width="8%" class="TableRow">Slowo (BNF)</td>
+				<td width="76%" class="TableRow">**Nazwa wydzialu prowadzacego okreslone studia z listy wydzialów</td>
+			</tr>
+</table><div class="pageFooter"></div>
+ 
+</body>
+</html>
