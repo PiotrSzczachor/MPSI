@@ -6,15 +6,15 @@
 
 /* Drop Foreign Key Constraints */
 
-ALTER TABLE [Ciê¿arówka] DROP CONSTRAINT [FK_Ciê¿arówka_Pojazd]
+ALTER TABLE [CiÄ™Å¼arÃ³wka] DROP CONSTRAINT [FK_CiÄ™Å¼arÃ³wka_Pojazd]
 
-ALTER TABLE [Ciê¿arówka] DROP CONSTRAINT [FK_Ciê¿arówka_przypisanie]
+ALTER TABLE [CiÄ™Å¼arÃ³wka] DROP CONSTRAINT [FK_CiÄ™Å¼arÃ³wka_przypisanie]
 
-ALTER TABLE [Ciê¿arówka] DROP CONSTRAINT [FK_Ciê¿arówka_Pojazd]
+ALTER TABLE [CiÄ™Å¼arÃ³wka] DROP CONSTRAINT [FK_CiÄ™Å¼arÃ³wka_Pojazd]
 
 ALTER TABLE [Dyspozytor] DROP CONSTRAINT [FK_Dyspozytor_Osoba]
 
-ALTER TABLE [Dyspozytor] DROP CONSTRAINT [FK_Dyspozytor_zarz¹dza]
+ALTER TABLE [Dyspozytor] DROP CONSTRAINT [FK_Dyspozytor_zarzÄ…dza]
 
 ALTER TABLE [Dyspozytor] DROP CONSTRAINT [FK_Dyspozytor_Osoba]
 
@@ -28,9 +28,9 @@ ALTER TABLE [Kierownik] DROP CONSTRAINT [FK_Kierownik_Osoba]
 
 ALTER TABLE [Kierownik] DROP CONSTRAINT [FK_Kierownik_Osoba]
 
-ALTER TABLE [ListaKierowców] DROP CONSTRAINT [FK_Lista kierowców_zarz¹dza]
+ALTER TABLE [ListaKierowcÃ³w] DROP CONSTRAINT [FK_Lista kierowcÃ³w_zarzÄ…dza]
 
-ALTER TABLE [ListaPojazdów] DROP CONSTRAINT [FK_Lista pojazdów_zarz¹dza]
+ALTER TABLE [ListaPojazdÃ³w] DROP CONSTRAINT [FK_Lista pojazdÃ³w_zarzÄ…dza]
 
 ALTER TABLE [Naczepa] DROP CONSTRAINT [FK_Naczepa_przypisanie]
 
@@ -40,13 +40,13 @@ ALTER TABLE [Naczepa] DROP CONSTRAINT [FK_Naczepa_Pojazd]
 
 ALTER TABLE [Pojazd] DROP CONSTRAINT [FK_Pojazd_przechowuje]
 
-ALTER TABLE [Po³o¿enieCiê¿arówki] DROP CONSTRAINT [FK_Po³o¿enie ciê¿arówki_przypisanie]
+ALTER TABLE [PoÅ‚oÅ¼enieCiÄ™Å¼arÃ³wki] DROP CONSTRAINT [FK_PoÅ‚oÅ¼enie ciÄ™Å¼arÃ³wki_przypisanie]
 
 ALTER TABLE [PowiadomienieE-mail] DROP CONSTRAINT [FK_Powiadomienie e-mail_otrzymuje]
 
 ALTER TABLE [PowiadomienieE-mail] DROP CONSTRAINT [FK_Powiadomienie e-mail_dotyczy]
 
-ALTER TABLE [PunktDocelowy] DROP CONSTRAINT [FK_Punkt docelowy_sk³ada siê z]
+ALTER TABLE [PunktDocelowy] DROP CONSTRAINT [FK_Punkt docelowy_skÅ‚ada siÄ™ z]
 
 ALTER TABLE [Raport] DROP CONSTRAINT [FK_Raport_generuje]
 
@@ -70,7 +70,7 @@ ALTER TABLE [Zlecenie] DROP CONSTRAINT [FK_Zlecenie_dotyczy]
 
 /* Drop Tables */
 
-DROP TABLE [Ciê¿arówka]
+DROP TABLE [CiÄ™Å¼arÃ³wka]
 
 DROP TABLE [Dyspozytor]
 
@@ -78,13 +78,13 @@ DROP TABLE [Kierowca]
 
 DROP TABLE [Kierownik]
 
-DROP TABLE [ListaKierowców]
+DROP TABLE [ListaKierowcÃ³w]
 
-DROP TABLE [ListaPojazdów]
+DROP TABLE [ListaPojazdÃ³w]
 
-DROP TABLE [ListaRaportów]
+DROP TABLE [ListaRaportÃ³w]
 
-DROP TABLE [ListaZleceñ]
+DROP TABLE [ListaZleceÅ„]
 
 DROP TABLE [Naczepa]
 
@@ -92,7 +92,7 @@ DROP TABLE [Osoba]
 
 DROP TABLE [Pojazd]
 
-DROP TABLE [Po³o¿enieCiê¿arówki]
+DROP TABLE [PoÅ‚oÅ¼enieCiÄ™Å¼arÃ³wki]
 
 DROP TABLE [PowiadomienieE-mail]
 
@@ -114,26 +114,26 @@ DROP TABLE [Zlecenie]
 
 /* Create Tables */
 
-CREATE TABLE [Ciê¿arówka]
+CREATE TABLE [CiÄ™Å¼arÃ³wka]
 (
 	[HistoriaTankowania] varchar NULL,
-	[Ciê¿arówkaID] Short NOT NULL,
+	[CiÄ™Å¼arÃ³wkaID] Short NOT NULL,
 	[KierowcaID] Short NULL
 )
 
 CREATE TABLE [Dyspozytor]
 (
-	[PrzyjêteZlecenia] varchar NULL,
+	[PrzyjÄ™teZlecenia] varchar NULL,
 	[DyspozytorID] Short NOT NULL,
-	[ListaZleceñID] Short NOT NULL
+	[ListaZleceÅ„ID] Short NOT NULL
 )
 
 CREATE TABLE [Kierowca]
 (
-	[HistoriaZleceñ] varchar NULL,
+	[HistoriaZleceÅ„] varchar NULL,
 	[NumerKierowcy] varchar NULL,
 	[KierowcaID] Short NOT NULL,
-	[ListaKierowcówID] Short NULL
+	[ListaKierowcÃ³wID] Short NULL
 )
 
 CREATE TABLE [Kierownik]
@@ -141,26 +141,26 @@ CREATE TABLE [Kierownik]
 	[KierownikID] Short NOT NULL
 )
 
-CREATE TABLE [ListaKierowców]
+CREATE TABLE [ListaKierowcÃ³w]
 (
-	[ListaKierowcówID] Short NOT NULL,
+	[ListaKierowcÃ³wID] Short NOT NULL,
 	[KierownikID] Short NOT NULL
 )
 
-CREATE TABLE [ListaPojazdów]
+CREATE TABLE [ListaPojazdÃ³w]
 (
-	[ListaPojazdówID] Short NOT NULL,
+	[ListaPojazdÃ³wID] Short NOT NULL,
 	[KierownikID] Short NOT NULL
 )
 
-CREATE TABLE [ListaRaportów]
+CREATE TABLE [ListaRaportÃ³w]
 (
-	[ListaRaportówID] Short NOT NULL
+	[ListaRaportÃ³wID] Short NOT NULL
 )
 
-CREATE TABLE [ListaZleceñ]
+CREATE TABLE [ListaZleceÅ„]
 (
-	[ListaZleceñID] Short NOT NULL
+	[ListaZleceÅ„ID] Short NOT NULL
 )
 
 CREATE TABLE [Naczepa]
@@ -172,7 +172,7 @@ CREATE TABLE [Naczepa]
 CREATE TABLE [Osoba]
 (
 	[Email] varchar NULL,
-	[Imiê] varchar NULL,
+	[ImiÄ™] varchar NULL,
 	[Nazwisko] varchar NULL,
 	[Pesel] varchar NULL,
 	[Telefon] varchar NULL,
@@ -188,14 +188,14 @@ CREATE TABLE [Pojazd]
 	[Przebieg] varchar NULL,
 	[Status] Short NULL,
 	[PojazdID] Short NOT NULL,
-	[ListaPojazdówID] Short NULL
+	[ListaPojazdÃ³wID] Short NULL
 )
 
-CREATE TABLE [Po³o¿enieCiê¿arówki]
+CREATE TABLE [PoÅ‚oÅ¼enieCiÄ™Å¼arÃ³wki]
 (
 	[Czas] DateTime NULL,
-	[Wspó³rzêdne] varchar NULL,
-	[Po³o¿enieCiê¿arówkiID] Short NOT NULL,
+	[WspÃ³Å‚rzÄ™dne] varchar NULL,
+	[PoÅ‚oÅ¼enieCiÄ™Å¼arÃ³wkiID] Short NOT NULL,
 	[ZdarzenieNaTrasieID] Short NOT NULL
 )
 
@@ -212,7 +212,7 @@ CREATE TABLE [PunktDocelowy]
 (
 	[Nazwa] varchar NULL,
 	[Odwiedzony] Byte NULL,
-	[Wspó³rzêdne] varchar NULL,
+	[WspÃ³Å‚rzÄ™dne] varchar NULL,
 	[PunktDocelowyID] Short NOT NULL,
 	[TrasaID] Short NOT NULL
 )
@@ -224,7 +224,7 @@ CREATE TABLE [Raport]
 	[Rodzaj] Short NULL,
 	[RaportID] Short NOT NULL,
 	[KierownikID] Short NULL,
-	[ListaRaportówID] Short NULL,
+	[ListaRaportÃ³wID] Short NULL,
 	[SzablonRaportuID] Short NULL
 )
 
@@ -244,7 +244,7 @@ CREATE TABLE [SzablonRaportu]
 
 CREATE TABLE [Towar]
 (
-	[Iloœæ] Short NULL,
+	[IloÅ›Ä‡] Short NULL,
 	[Jednostka] varchar NULL,
 	[Nazwa] varchar NULL,
 	[TowarID] Short NOT NULL,
@@ -254,8 +254,8 @@ CREATE TABLE [Towar]
 CREATE TABLE [Trasa]
 (
 	[CzasWyjazdu] DateTime NULL,
-	[CzasZakoñczenia] DateTime NULL,
-	[D³ugoœæ] Double NULL,
+	[CzasZakoÅ„czenia] DateTime NULL,
+	[DÅ‚ugoÅ›Ä‡] Double NULL,
 	[TrasaID] Short NOT NULL
 )
 
@@ -270,23 +270,23 @@ CREATE TABLE [ZdarzenieNaTrasie]
 CREATE TABLE [Zlecenie]
 (
 	[CzasDodania] DateTime NULL,
-	[CzasPrzyjêciaDoRealizacji] DateTime NULL,
-	[CzasUkoñczenia] DateTime NULL,
+	[CzasPrzyjÄ™ciaDoRealizacji] DateTime NULL,
+	[CzasUkoÅ„czenia] DateTime NULL,
 	[Id] Short NULL,
 	[NazwaKlienta] varchar NULL,
 	[Status] Short NULL,
 	[ZlecenieID] Short NOT NULL,
-	[ListaZleceñID] Short NULL,
+	[ListaZleceÅ„ID] Short NULL,
 	[SpedytorID] Short NULL,
 	[TrasaID] Short NULL
 )
 
 /* Create Primary Keys, Indexes, Uniques, Checks */
 
-ALTER TABLE [Ciê¿arówka] ADD CONSTRAINT [PK_Ciê¿arówka]
-	PRIMARY KEY ([Ciê¿arówkaID])
+ALTER TABLE [CiÄ™Å¼arÃ³wka] ADD CONSTRAINT [PK_CiÄ™Å¼arÃ³wka]
+	PRIMARY KEY ([CiÄ™Å¼arÃ³wkaID])
 
-CREATE INDEX [IX_Ciê¿arówka] ON [Ciê¿arówka] ([Ciê¿arówkaID] ASC)
+CREATE INDEX [IX_CiÄ™Å¼arÃ³wka] ON [CiÄ™Å¼arÃ³wka] ([CiÄ™Å¼arÃ³wkaID] ASC)
 
 ALTER TABLE [Dyspozytor] ADD CONSTRAINT [PK_Dyspozytor]
 	PRIMARY KEY ([DyspozytorID])
@@ -301,17 +301,17 @@ CREATE INDEX [IX_NumerKierowcy] ON [Kierowca] ([NumerKierowcy] ASC)
 ALTER TABLE [Kierownik] ADD CONSTRAINT [PK_Kierownik]
 	PRIMARY KEY ([KierownikID])
 
-ALTER TABLE [ListaKierowców] ADD CONSTRAINT [PK_ListaKierowców]
-	PRIMARY KEY ([ListaKierowcówID])
+ALTER TABLE [ListaKierowcÃ³w] ADD CONSTRAINT [PK_ListaKierowcÃ³w]
+	PRIMARY KEY ([ListaKierowcÃ³wID])
 
-ALTER TABLE [ListaPojazdów] ADD CONSTRAINT [PK_ListaPojazdów]
-	PRIMARY KEY ([ListaPojazdówID])
+ALTER TABLE [ListaPojazdÃ³w] ADD CONSTRAINT [PK_ListaPojazdÃ³w]
+	PRIMARY KEY ([ListaPojazdÃ³wID])
 
-ALTER TABLE [ListaRaportów] ADD CONSTRAINT [PK_ListaRaportów]
-	PRIMARY KEY ([ListaRaportówID])
+ALTER TABLE [ListaRaportÃ³w] ADD CONSTRAINT [PK_ListaRaportÃ³w]
+	PRIMARY KEY ([ListaRaportÃ³wID])
 
-ALTER TABLE [ListaZleceñ] ADD CONSTRAINT [PK_ListaZleceñ]
-	PRIMARY KEY ([ListaZleceñID])
+ALTER TABLE [ListaZleceÅ„] ADD CONSTRAINT [PK_ListaZleceÅ„]
+	PRIMARY KEY ([ListaZleceÅ„ID])
 
 ALTER TABLE [Naczepa] ADD CONSTRAINT [PK_Naczepa]
 	PRIMARY KEY ([NaczepaID])
@@ -321,7 +321,7 @@ CREATE INDEX [IX_Naczepa] ON [Naczepa] ([NaczepaID] ASC)
 ALTER TABLE [Osoba] ADD CONSTRAINT [PK_Osoba]
 	PRIMARY KEY ([OsobaID])
 
-CREATE INDEX [IX_Imiê] ON [Osoba] ([Imiê] ASC)
+CREATE INDEX [IX_ImiÄ™] ON [Osoba] ([ImiÄ™] ASC)
 
 CREATE INDEX [IX_Nazwisko] ON [Osoba] ([Nazwisko] ASC)
 
@@ -330,8 +330,8 @@ ALTER TABLE [Pojazd] ADD CONSTRAINT [PK_Pojazd]
 
 CREATE INDEX [IX_Pojazd] ON [Pojazd] ([PojazdID] ASC)
 
-ALTER TABLE [Po³o¿enieCiê¿arówki] ADD CONSTRAINT [PK_Po³o¿enieCiê¿arówki]
-	PRIMARY KEY ([Po³o¿enieCiê¿arówkiID])
+ALTER TABLE [PoÅ‚oÅ¼enieCiÄ™Å¼arÃ³wki] ADD CONSTRAINT [PK_PoÅ‚oÅ¼enieCiÄ™Å¼arÃ³wki]
+	PRIMARY KEY ([PoÅ‚oÅ¼enieCiÄ™Å¼arÃ³wkiID])
 
 ALTER TABLE [PowiadomienieE-mail] ADD CONSTRAINT [PK_PowiadomienieE-mail]
 	PRIMARY KEY ([PowiadomienieE-mailID])
@@ -366,30 +366,30 @@ ALTER TABLE [Zlecenie] ADD CONSTRAINT [PK_Zlecenie]
 
 CREATE INDEX [IX_Zlecenie] ON [Zlecenie] ([ZlecenieID] ASC)
 
-CREATE INDEX [IX_CzasUkoñczenia] ON [Zlecenie] ([CzasUkoñczenia] ASC)
+CREATE INDEX [IX_CzasUkoÅ„czenia] ON [Zlecenie] ([CzasUkoÅ„czenia] ASC)
 
 /* Create Foreign Key Constraints */
 
-ALTER TABLE [Ciê¿arówka] ADD CONSTRAINT [FK_Ciê¿arówka_Pojazd]
-	FOREIGN KEY ([Ciê¿arówkaID]) REFERENCES [Pojazd] ([PojazdID])
+ALTER TABLE [CiÄ™Å¼arÃ³wka] ADD CONSTRAINT [FK_CiÄ™Å¼arÃ³wka_Pojazd]
+	FOREIGN KEY ([CiÄ™Å¼arÃ³wkaID]) REFERENCES [Pojazd] ([PojazdID])
 
-ALTER TABLE [Ciê¿arówka] ADD CONSTRAINT [FK_Ciê¿arówka_przypisanie]
+ALTER TABLE [CiÄ™Å¼arÃ³wka] ADD CONSTRAINT [FK_CiÄ™Å¼arÃ³wka_przypisanie]
 	FOREIGN KEY ([KierowcaID]) REFERENCES [Kierowca] ([KierowcaID])
 
-ALTER TABLE [Ciê¿arówka] ADD CONSTRAINT [FK_Ciê¿arówka_Pojazd]
-	FOREIGN KEY ([Ciê¿arówkaID]) REFERENCES [Pojazd] ([PojazdID])
+ALTER TABLE [CiÄ™Å¼arÃ³wka] ADD CONSTRAINT [FK_CiÄ™Å¼arÃ³wka_Pojazd]
+	FOREIGN KEY ([CiÄ™Å¼arÃ³wkaID]) REFERENCES [Pojazd] ([PojazdID])
 
 ALTER TABLE [Dyspozytor] ADD CONSTRAINT [FK_Dyspozytor_Osoba]
 	FOREIGN KEY ([DyspozytorID]) REFERENCES [Osoba] ([OsobaID])
 
-ALTER TABLE [Dyspozytor] ADD CONSTRAINT [FK_Dyspozytor_zarz¹dza]
-	FOREIGN KEY ([ListaZleceñID]) REFERENCES [ListaZleceñ] ([ListaZleceñID])
+ALTER TABLE [Dyspozytor] ADD CONSTRAINT [FK_Dyspozytor_zarzÄ…dza]
+	FOREIGN KEY ([ListaZleceÅ„ID]) REFERENCES [ListaZleceÅ„] ([ListaZleceÅ„ID])
 
 ALTER TABLE [Dyspozytor] ADD CONSTRAINT [FK_Dyspozytor_Osoba]
 	FOREIGN KEY ([DyspozytorID]) REFERENCES [Osoba] ([OsobaID])
 
 ALTER TABLE [Kierowca] ADD CONSTRAINT [FK_Kierowca_przechowuje]
-	FOREIGN KEY ([ListaKierowcówID]) REFERENCES [ListaKierowców] ([ListaKierowcówID])
+	FOREIGN KEY ([ListaKierowcÃ³wID]) REFERENCES [ListaKierowcÃ³w] ([ListaKierowcÃ³wID])
 
 ALTER TABLE [Kierowca] ADD CONSTRAINT [FK_Kierowca_Osoba]
 	FOREIGN KEY ([KierowcaID]) REFERENCES [Osoba] ([OsobaID])
@@ -403,10 +403,10 @@ ALTER TABLE [Kierownik] ADD CONSTRAINT [FK_Kierownik_Osoba]
 ALTER TABLE [Kierownik] ADD CONSTRAINT [FK_Kierownik_Osoba]
 	FOREIGN KEY ([KierownikID]) REFERENCES [Osoba] ([OsobaID])
 
-ALTER TABLE [ListaKierowców] ADD CONSTRAINT [FK_Lista kierowców_zarz¹dza]
+ALTER TABLE [ListaKierowcÃ³w] ADD CONSTRAINT [FK_Lista kierowcÃ³w_zarzÄ…dza]
 	FOREIGN KEY ([KierownikID]) REFERENCES [Kierownik] ([KierownikID])
 
-ALTER TABLE [ListaPojazdów] ADD CONSTRAINT [FK_Lista pojazdów_zarz¹dza]
+ALTER TABLE [ListaPojazdÃ³w] ADD CONSTRAINT [FK_Lista pojazdÃ³w_zarzÄ…dza]
 	FOREIGN KEY ([KierownikID]) REFERENCES [Kierownik] ([KierownikID])
 
 ALTER TABLE [Naczepa] ADD CONSTRAINT [FK_Naczepa_przypisanie]
@@ -419,9 +419,9 @@ ALTER TABLE [Naczepa] ADD CONSTRAINT [FK_Naczepa_Pojazd]
 	FOREIGN KEY ([NaczepaID]) REFERENCES [Pojazd] ([PojazdID])
 
 ALTER TABLE [Pojazd] ADD CONSTRAINT [FK_Pojazd_przechowuje]
-	FOREIGN KEY ([ListaPojazdówID]) REFERENCES [ListaPojazdów] ([ListaPojazdówID])
+	FOREIGN KEY ([ListaPojazdÃ³wID]) REFERENCES [ListaPojazdÃ³w] ([ListaPojazdÃ³wID])
 
-ALTER TABLE [Po³o¿enieCiê¿arówki] ADD CONSTRAINT [FK_Po³o¿enie ciê¿arówki_przypisanie]
+ALTER TABLE [PoÅ‚oÅ¼enieCiÄ™Å¼arÃ³wki] ADD CONSTRAINT [FK_PoÅ‚oÅ¼enie ciÄ™Å¼arÃ³wki_przypisanie]
 	FOREIGN KEY ([ZdarzenieNaTrasieID]) REFERENCES [ZdarzenieNaTrasie] ([ZdarzenieNaTrasieID])
 
 ALTER TABLE [PowiadomienieE-mail] ADD CONSTRAINT [FK_Powiadomienie e-mail_otrzymuje]
@@ -430,14 +430,14 @@ ALTER TABLE [PowiadomienieE-mail] ADD CONSTRAINT [FK_Powiadomienie e-mail_otrzym
 ALTER TABLE [PowiadomienieE-mail] ADD CONSTRAINT [FK_Powiadomienie e-mail_dotyczy]
 	FOREIGN KEY ([ZlecenieID]) REFERENCES [Zlecenie] ([ZlecenieID])
 
-ALTER TABLE [PunktDocelowy] ADD CONSTRAINT [FK_Punkt docelowy_sk³ada siê z]
+ALTER TABLE [PunktDocelowy] ADD CONSTRAINT [FK_Punkt docelowy_skï¿½ada siï¿½ z]
 	FOREIGN KEY ([TrasaID]) REFERENCES [Trasa] ([TrasaID])
 
 ALTER TABLE [Raport] ADD CONSTRAINT [FK_Raport_generuje]
 	FOREIGN KEY ([KierownikID]) REFERENCES [Kierownik] ([KierownikID])
 
 ALTER TABLE [Raport] ADD CONSTRAINT [FK_Raport_przechowuje]
-	FOREIGN KEY ([ListaRaportówID]) REFERENCES [ListaRaportów] ([ListaRaportówID])
+	FOREIGN KEY ([ListaRaportÃ³wID]) REFERENCES [ListaRaportï¿½w] ([ListaRaportÃ³wID])
 
 ALTER TABLE [Raport] ADD CONSTRAINT [FK_Raport_generowany na podstawie]
 	FOREIGN KEY ([SzablonRaportuID]) REFERENCES [SzablonRaportu] ([SzablonRaportuID])
@@ -455,7 +455,7 @@ ALTER TABLE [ZdarzenieNaTrasie] ADD CONSTRAINT [FK_Zdarzenie na trasie_posiada]
 	FOREIGN KEY ([TrasaID]) REFERENCES [Trasa] ([TrasaID])
 
 ALTER TABLE [Zlecenie] ADD CONSTRAINT [FK_Zlecenie_przechowuje]
-	FOREIGN KEY ([ListaZleceñID]) REFERENCES [ListaZleceñ] ([ListaZleceñID])
+	FOREIGN KEY ([ListaZleceÅ„ID]) REFERENCES [ListaZleceÅ„] ([ListaZleceÅ„ID])
 
 ALTER TABLE [Zlecenie] ADD CONSTRAINT [FK_Zlecenie_dodaje]
 	FOREIGN KEY ([SpedytorID]) REFERENCES [Spedytor] ([SpedytorID])
